@@ -2,7 +2,6 @@ import { Box, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import { PrimaryGradientButton } from "src/components/Button";
 import { RoadMapTimelineDesktop } from "src/components/Roadmap";
-import { CustomSwiper } from "src/components/Swiper";
 import { SwiperSection } from "src/components/SwiperSection";
 
 const Home: NextPage = () => {
@@ -36,12 +35,12 @@ const Home: NextPage = () => {
             </Box>
           </Box>
         </Box>
-        </Box>
+      </Box>
       <Box
         textAlign="center"
         padding="64px"
         sx={{
-          position: 'relative',
+          position: "relative",
           background: "linear-gradient(126.03deg, #E9E9FF -6.19%, #FFECEA 178.03%)",
         }}
       >
@@ -60,7 +59,8 @@ const Home: NextPage = () => {
             <img src="static/images/whyus-2.png" />
             <Typography variant="h4">Automated transaction</Typography>
             <Box marginTop="8px">
-              Automate manual processes by<br/> making the most of Manekiki
+              Automate manual processes by
+              <br /> making the most of Manekiki
             </Box>
           </Box>
           <Box>
@@ -93,13 +93,13 @@ const Home: NextPage = () => {
                 <Box>
                   <img src="static/images/get-started-1.png" />
                 </Box>
-                <Box textAlign="left" >
+                <Box textAlign="left">
                   <Typography variant="h3">
-                    Set up Company <br/>
+                    Set up Company <br />
                     Create Vaults
                   </Typography>
                   <Typography marginTop="16px" variant="subtitle1">
-                    Create your company and set up vaults <br/>
+                    Create your company and set up vaults <br />
                     for each department/team
                   </Typography>
                   <Box marginTop="48px">
@@ -107,17 +107,17 @@ const Home: NextPage = () => {
                   </Box>
                 </Box>
               </Box>
-              <Box display="flex" justifyContent="space-between"  alignItems="center">
+              <Box display="flex" justifyContent="space-between" alignItems="center">
                 <Box>
                   <img src="static/images/get-started-2.png" />
                 </Box>
                 <Box textAlign="left">
                   <Typography variant="h3">
-                    Add members <br/>
+                    Add members <br />
                     to your company
                   </Typography>
                   <Typography marginTop="16px" variant="subtitle1">
-                    Add a team member to your company <br/>
+                    Add a team member to your company <br />
                     using public key, and set up their role
                   </Typography>
                   <Box marginTop="48px">
@@ -125,17 +125,16 @@ const Home: NextPage = () => {
                   </Box>
                 </Box>
               </Box>
-              <Box display="flex" justifyContent="space-between"  alignItems="center">
+              <Box display="flex" justifyContent="space-between" alignItems="center">
                 <Box>
                   <img src="static/images/get-started-3.png" />
                 </Box>
                 <Box textAlign="left">
                   <Typography variant="h3">
-                    Set Roles <br/>
-                    & Authorization
+                    Set Roles <br />& Authorization
                   </Typography>
                   <Typography marginTop="16px" variant="subtitle1">
-                    Set authorization for your team members <br/>
+                    Set authorization for your team members <br />
                     in each vault: admin, approver, requester
                   </Typography>
                   <Box marginTop="48px">
@@ -143,18 +142,18 @@ const Home: NextPage = () => {
                   </Box>
                 </Box>
               </Box>
-              <Box display="flex" justifyContent="space-between"  alignItems="center">
+              <Box display="flex" justifyContent="space-between" alignItems="center">
                 <Box>
                   <img src="static/images/get-started-4.png" />
                 </Box>
                 <Box textAlign="left">
                   <Typography variant="h3">
-                    All Done! <br/>
+                    All Done! <br />
                     You're good to go
                   </Typography>
                   <Typography variant="subtitle1">
-                  That’s all! You can now manage with confidence using <br/>
-                  your new, automated flow system designed for Web3
+                    That’s all! You can now manage with confidence using <br />
+                    your new, automated flow system designed for Web3
                   </Typography>
                   <Box marginTop="48px">
                     <img src="static/images/footer.png" />

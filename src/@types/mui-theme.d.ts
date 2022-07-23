@@ -23,8 +23,8 @@ declare module "@mui/material/styles" {
     accent: Partial<AccentColors>;
     border: Partial<BorderColors>;
     gradient: {
-      primary: string;
-      secondary: string;
+      linear: Partial<GradientColors>;
+      radial: Partial<GradientColors>;
     };
   }
 
