@@ -1,11 +1,5 @@
 import styled from "@emotion/styled";
-import {
-  Box,
-  Stack,
-  Typography,
-  useScrollTrigger,
-  useTheme,
-} from "@mui/material";
+import { Box, Stack, Typography, useScrollTrigger, useTheme } from "@mui/material";
 import Link from "next/link";
 import { ThemeToggleSwitch } from "src/components/ThemeToggleSwitch";
 import { ManekikiLogo, NextJSIcon } from "src/svgs";
@@ -22,8 +16,7 @@ const Wrapper = styled(Box, {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: ${({ theme, isScrollTriggered }) =>
-    isScrollTriggered ? theme.shadows[5] : "none"};
+  box-shadow: ${({ theme, isScrollTriggered }) => (isScrollTriggered ? theme.shadows[5] : "none")};
   background-color: ${({ theme, isScrollTriggered }) =>
     isScrollTriggered ? theme.palette.background.default : "transparent"};
   z-index: ${({ theme }) => theme.zIndex.drawer + 1};
@@ -57,17 +50,15 @@ export const Navbar: FC<Props> = (props) => {
         }}
       >
         <Link href="/" passHref>
-          <Box
-            component="a"
-            color={theme.palette.mode === "light" ? "black" : "white"}
-            px={1.5}
-          >
+          <Box component="a" color={theme.palette.mode === "light" ? "black" : "white"} px={1.5}>
             <ManekikiLogo />
           </Box>
         </Link>
         <Box display="flex" justifyContent="flex-end" pr={1} width="100%">
           <Stack direction="row" spacing={3}>
-            <PrimaryGradientButton>Launch App</PrimaryGradientButton>
+            <Link href="https://app.manekiki.xyz">
+              <PrimaryGradientButton>Launch App</PrimaryGradientButton>
+            </Link>
           </Stack>
         </Box>
       </Box>
