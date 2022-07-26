@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import type { NextPage } from "next";
+import Link from "next/link";
 import { PrimaryGradientButton } from "src/components/Button";
 import { RoadMapTimelineDesktop } from "src/components/Roadmap";
 import { SwiperSection } from "src/components/SwiperSection";
@@ -14,7 +15,9 @@ const Home: NextPage = () => {
               Web 3 Asset Management <br />
               REIMAGINED.
             </Typography>
-            <PrimaryGradientButton>Join Now</PrimaryGradientButton>
+            <Link href="https://app.manekiki.xyz" passHref>
+              <PrimaryGradientButton>Join Now</PrimaryGradientButton>
+            </Link>
           </Box>
           <Box>
             <img src="static/images/banner.png" />
@@ -184,7 +187,9 @@ const Home: NextPage = () => {
           office, or business.
         </Box>
         <Box marginTop="70px">
-          <PrimaryGradientButton>Join Now</PrimaryGradientButton>
+          <Link href="https://app.manekiki.xyz" passHref>
+            <PrimaryGradientButton>Join Now</PrimaryGradientButton>
+          </Link>
         </Box>
       </Box>
     </Box>
